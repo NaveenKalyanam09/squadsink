@@ -1,126 +1,739 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>AchieversIT</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <title>AchiversIT</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <nav>
-    <header style="background-color: black;">
-   <div>
-    <img src="https://www.achieversit.com/assets/images/logo-white.png" alt="">
-    
-    <ul style="list-style: none; display:inline-flex; gap: 20px;">
-        <li><a href="">Courses</a></li>
-        <li><a href="">Placements</a></li>
-        <li><a href="">Internship</a></li>
-        <li><a href="">Existing Students</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Reviews</a></li>
-        <li><a href="">Blog</a></li>
-    </ul>
+  <!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="navbar__logo">
+    <img src="https://www.achieversit.com/assets/images/logo-white.png" alt="AchieversIT Logo" class="navbar__logo-img" style="background-color: black;"/>
+    </div>
+</nav>
+  <ul class="main-menu">
+    <li class="menu-item">
+      <a href="#" class="menu-link">All Courses ▾</a>
+    </li>
+    <li class="main-menu">
+      <a href="#" class="menu-link">Placements</a>
+    </li>
+    <li class="main-menu">
+      <a href="#" class="menu-link">Internship</a>
+    </li>
+    <li class="main-menu">
+      <a href="#" class="menu-link">Existing Students ▾</a>
+    </li>
+    <li class="main-menu">
+      <a href="#" class="menu-link">About Us ▾</a>
+    </li>
+    <li class="main-menu">
+      <a href="#" class="menu-link">Reviews</a>
+    </li>
+    <li class="main-menu">
+      <a href="#" class="menu-link">Blog</a>
+    </li>
+  </ul>
+</nav>
 
-    </header>
-    </nav>
-    </div> 
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://images.pexels.com/photos/4976710/pexels-photo-4976710.jpeg" class="d-block w-100" alt="..." style="height: 300px; width: 300px;">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg" class="d-block w-100" alt="..." style="height: 300px;width: 300px;">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg" class="d-block w-100" alt="..." style="height: 300px; width: 300px;">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.pexels.com/photos/115655/pexels-photo-115655.jpeg" class="d-block w-100" alt="..." style="height: 300px;width: 300px;" >
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg" class="d-block w-100" alt="..." style="height: 300px;width: 300px;">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg" class="d-block w-100" alt="..." style="height: 300px;width: 300px;">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Developer Role Cards Section -->
+<div class="developer-cards">
+
+  <!-- UI Developer Card -->
+  <div class="card">
+    <div class="card-content">
+      <p class="card-subtitle">BECOME A</p>
+      <h4 class="card-title">UI DEVELOPER</h4>
+    </div>
+    <a href="#" class="card-link">Know More <span class="arrow">›</span></a>
+  </div>
+
+  <!-- Angular Developer Card -->
+  <div class="card">
+    <div class="card-content">
+      <p class="card-subtitle">BECOME A</p>
+      <h4 class="card-title">ANGULAR<br />DEVELOPER</h4>
+    </div>
+    <a href="#" class="card-link">Know More <span class="arrow">›</span></a>
+  </div>
+
+  <!-- ReactJS Developer Card -->
+  <div class="card">
+    <div class="card-content">
+      <p class="card-subtitle">BECOME A</p>
+      <h4 class="card-title">REACTJS<br />DEVELOPER</h4>
+    </div>
+    <a href="#" class="card-link">Know More <span class="arrow">›</span></a>
+  </div>
+
+</div>
+<!-- Trending Courses Section -->
+<section class="trending-courses">
+  <h2 class="section-title">Trending Courses</h2>
+
+  <!-- First Row -->
+  <div class="course-row">
+    <!-- Course Card -->
+    <div class="course-card">
+      <div class="course-header angular">
+        <h3 class="course-title">Angular Development Course</h3>
       </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-       
-      <section style="display: inline-flex; gap: 20px;">
-    <div>
-        <p style="color: red;">BECOME A</p>
-        <h4>UI DEVELOPER</h4>
-        <a href="">Know more&gt;</a>
+      <p class="course-description">
+        Angular is popular for making dynamic applications and its information official...
+      </p>
+      <p class="course-reviews">Reviews</p>
+      <div class="course-rating">⭐ ⭐ ⭐ ⭐ ⭐ <span>5.0 (257)</span></div>
     </div>
 
-    <div>
-        <P style="color: red;">BECOME A</P>
-        <h4>ANGULAR DEVELOPER</h4>
-        <a href="">Know more&gt;</a>
+    <div class="course-card">
+      <div class="course-header react">
+        <h3 class="course-title">React Development Course</h3>
+      </div>
+      <p class="course-description">
+        AchieversIT React JS Certification Course in Bangalore. We teach you detailed...
+      </p>
+      <p class="course-reviews">Reviews</p>
+      <div class="course-rating">⭐ ⭐ ⭐ ⭐ ⭐ <span>5.0 (292)</span></div>
     </div>
 
-    <div>
-        <p style="color: red;">BECOME A</p>
-        <h4>REACT JS DEVELOPER</h4>
-        <a href="">Know more&gt;</a>
-    </div>
-    </section>
-
-    <h1>TRENDING COURSES</h1>
-    <section style="display: inline-flex; gap: 20px;"> 
-    <div>
-      <h6 style="color: palevioletred;"><b>ANGULAR DEVELOPMENT COURSE</b></h6>
+    <div class="course-card">
+      <div class="course-header mean">
+        <h3 class="course-title">MEAN Stack Development Course</h3>
+      </div>
+      <p class="course-description">
+        MEAN Stack Front To Back. In this course we will build an in-depth full-stack...
+      </p>
+      <p class="course-reviews">Reviews</p>
+      <div class="course-rating">⭐ ⭐ ⭐ ⭐ ✩ <span>4.5 (196)</span></div>
     </div>
 
-    <div>
-     <h6 style="color: orange;"><b>REACT DEVELOPMENT COURSE</b></h6>
+    <div class="course-card">
+      <div class="course-header mern">
+        <h3 class="course-title">MERN Stack Development Course</h3>
+      </div>
+      <p class="course-description">
+        MERN Stack Front To Back. In this course we will build an in-depth full-stack...
+      </p>
+      <p class="course-reviews">Reviews</p>
+      <div class="course-rating">⭐ ⭐ ⭐ ⭐ ✩ <span>4.5 (192)</span></div>
+    </div>
+  </div>
+
+  <!-- Second Row -->
+  <div class="course-row">
+    <div class="course-card">
+      <div class="course-header web">
+        <h3 class="course-title">Web Development Course</h3>
+      </div>
+      <p class="course-description">
+        With AchieversIT's UI development course in Bangalore, you will be able to master...
+      </p>
+      <p class="course-reviews">Reviews</p>
+      <div class="course-rating">⭐ ⭐ ⭐ ⭐ ⭐ <span>5.0 (312)</span></div>
     </div>
 
-    <div>
-        <h6 style="color: violet;"><b>MEAN STACK DEVELOPMENT COURSE</b></h6>
+    <div class="course-card">
+      <div class="course-header digital">
+        <h3 class="course-title">Digital Marketing Course</h3>
+      </div>
+      <p class="course-description">
+        The future for digital marketing is promising, and its scope in the upcoming future...
+      </p>
+      <p class="course-reviews">Reviews</p>
+      <div class="course-rating">⭐ ⭐ ⭐ ⭐ ✩ <span>4.8 (178)</span></div>
     </div>
 
-    <div>
-        <h6 style="color: skyblue;"><b>MERN STACK DEVELOPMENT COURSE</b></h6>
+    <div class="course-card">
+      <div class="course-header react-native">
+        <h3 class="course-title">React Native Development Course</h3>
+      </div>
+      <p class="course-description">
+        Full Stack development is defined as the development of both the front-end and back-end...
+      </p>
+      <p class="course-reviews">Reviews</p>
+      <div class="course-rating">⭐ ⭐ ⭐ ⭐ ✩ <span>4.6 (175)</span></div>
     </div>
-    </section>
+
+    <div class="course-card">
+      <div class="course-header ionic">
+        <h3 class="course-title">Ionic Development Course</h3>
+      </div>
+      <p class="course-description">
+        Ionic 4 & 5 that you can immediately implement to build high-quality apps...
+      </p>
+      <p class="course-reviews">Reviews</p>
+      <div class="course-rating">⭐ ⭐ ⭐ ⭐ ✩ <span>4.6 (179)</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Recent Additions Section -->
+<section class="recent-additions">
+  <h2 class="section-title">Recent Additions</h2>
+
+  <div class="course-row">
+
+    <!-- UI Development Course -->
+    <div class="course-card">
+      <div class="course-header ui-course">
+        <h3 class="course-title">UI Development Course</h3>
+      </div>
+      <p class="course-description">
+        UI development course in Bangalore, you will be able to master the concepts such ...
+      </p>
+      <div class="course-footer">
+        <p class="course-reviews-label">Reviews</p>
+        <div class="course-rating">
+          ⭐ ⭐ ⭐ ⭐ ⭐ <span class="rating-score">4.6</span><br />
+          <span class="rating-count">(192)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- VueJS Development Course -->
+    <div class="course-card">
+      <div class="course-header vue-course">
+        <h3 class="course-title">VueJS Development Course</h3>
+      </div>
+      <p class="course-description">
+        VueJS framework that is gaining a reputation as being a lightweight alternative t...
+      </p>
+      <div class="course-footer">
+        <p class="course-reviews-label">Reviews</p>
+        <div class="course-rating">
+          ⭐ ⭐ ⭐ ⭐ ⭐ <span class="rating-score">4.3</span><br />
+          <span class="rating-count">(146)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- WordPress Development Course -->
+    <div class="course-card">
+      <div class="course-header wordpress-course">
+        <h3 class="course-title">WordPress Development Course</h3>
+      </div>
+      <p class="course-description">
+        WordPress Certification Training Course in Bangalore is one of the best trainin...
+      </p>
+      <div class="course-footer">
+        <p class="course-reviews-label">Reviews</p>
+        <div class="course-rating">
+          ⭐ ⭐ ⭐ ⭐ ⭐ <span class="rating-score">4.6</span><br />
+          <span class="rating-count">(184)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Python Development Course -->
+    <div class="course-card">
+      <div class="course-header python-course">
+        <h3 class="course-title">Python Development Course</h3>
+      </div>
+      <p class="course-description">
+        Big data, Machine Learning and Data Science using Python programm...
+      </p>
+      <div class="course-footer">
+        <p class="course-reviews-label">Reviews</p>
+        <div class="course-rating">
+          ⭐ ⭐ ⭐ ⭐ ⭐ <span class="rating-score">4.8</span><br />
+          <span class="rating-count">(237)</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Top Categories Section  Starts Here-->
+<section class="top-categories">
+  <h2 class="section-title">Discover Top Categories</h2>
+
+  <!-- First Row -->
+  <div class="category-row">
+    <div class="category-card">
+      <div class="category-icon devops-icon"></div>
+      <p class="category-title">DevOps</p>
+    </div>
+    <div class="category-card">
+      <div class="category-icon frontend-icon"></div>
+      <p class="category-title">Front-End</p>
+    </div>
+    <div class="category-card">
+      <div class="category-icon mobile-icon"></div>
+      <p class="category-title">Mobile App Dev</p>
+    </div>
+    <div class="category-card">
+      <div class="category-icon digital-icon"></div>
+      <p class="category-title">Digital Marketing</p>
+    </div>
+    <div class="category-card">
+      <div class="category-icon frameworks-icon"></div>
+      <p class="category-title">Program & Frame Works</p>
+    </div>
+    <div class="category-card">
+      <div class="category-icon data-icon"></div>
+      <p class="category-title">Data Types</p>
+    </div>
+  </div>
+
+  <!-- Second Row -->
+  <div class="category-row">
+    <div class="category-card">
+      <div class="category-icon testing-icon"></div>
+      <p class="category-title">Software Testing</p>
+    </div>
+    <div class="category-card">
+      <div class="category-icon cloud-icon"></div>
+      <p class="category-title">Cloud Computing</p>
+    </div>
+    <div class="category-card">
+      <div class="category-icon security-icon"></div>
+      <p class="category-title">Cyber Security</p>
+    </div>
+    <div class="category-card">
+      <div class="category-icon ai-icon"></div>
+      <p class="category-title">Artificial Intelligence</p>
+    </div>
+    <div class="category-card">
+      <div class="category-icon python-icon"></div>
+      <p class="category-title">Python</p>
+    </div>
+    <div class="category-card">
+      <div class="category-icon bigdata-icon"></div>
+      <p class="category-title">Big Data</p>
+    </div>
+  </div>
+</section>
+<!-- Top Categories Section Ends Here-->
+
+<!--Reviews section starts here-->
+
+<section class="reviews-section">
+  <h2 class="reviews-heading">REVIEWS</h2>
+
+  <div class="reviews-cards-container">
+
+    <!-- Card 1 -->
+    <div class="reviews-card">
+      <div class="reviews-user-header header-orange">
+        <div class="user-avatar">M</div>
+        <div class="user-name">Mallika M</div>
+      </div>
+      <div class="reviews-content">
+        <p class="course-name">Angular Certification Training</p>
+        <div class="reviews-stars">⭐⭐⭐⭐⭐</div>
+        <p class="user-feedback">
+          I had recently attended the Angular js Training in AchieversIT, I must say they
+        </p>
+        <a href="#" class="read-more-link">Read More</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="reviews-card">
+      <div class="reviews-user-header header-sky">
+        <div class="user-avatar">L</div>
+        <div class="user-name">Lakshmi Bhaskar Reddy</div>
+      </div>
+      <div class="reviews-content">
+        <p class="course-name">Digital Marketing Certification Training</p>
+        <div class="reviews-stars">⭐⭐⭐⭐⭐</div>
+        <p class="user-feedback">
+          AchieversIT provides an excellent way to learn from professional trainers. I
+        </p>
+        <a href="#" class="read-more-link">Read More</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="reviews-card">
+      <div class="reviews-user-header header-blue">
+        <div class="user-avatar">K</div>
+        <div class="user-name">Kiran CSN</div>
+      </div>
+      <div class="reviews-content">
+        <p class="course-name">Angular , React and Ionic Training</p>
+        <div class="reviews-stars">⭐⭐⭐⭐⭐</div>
+        <p class="user-feedback">
+          It’s really good institutions where they have good trainers and materials are
+        </p>
+        <a href="#" class="read-more-link">Read More</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pagination dots -->
+  <div class="reviews-pagination">
+    <span class="dot active"></span>
+    <span class="dot active"></span>
+    <span class="dot active"></span>
+    <span class="dot active"></span>
+  </div>
+
+  <!-- View All -->
+  <div class="view-all-container">
+    <a href="#" class="view-all-link">VIEW ALL REVIEWS ➤</a>
+  </div>
+</section>
+
+  <!--Reviews section ends here-->
+
+  <!--contact us section starts here-->
+ 
+  <section class="contact-section">
+    <div class="contact-container">
+      <h2 class="contact-message">
+        Enroll, Learn, Grow, Repeat! Get ready to achieve your learning goals with Acheivers IT
+      </h2>
+      <button class="contact-button">CONTACT US</button>
+    </div>
+  </section>
+  
+  <!--contact us section ends here-->
+
+  <section class="features-section">
+    <div class="features-wrapper">
+      <h2 class="features-heading">Acheivers IT Edge</h2>
+      <div class="features-grid">
+  
+        <div class="feature-box">
+          <div class="feature-icon">
+            <img src="tick-icon.png" alt="Check Mark">
+          </div>
+          <h3 class="feature-title">Real Time Doubt Resolution</h3>
+          <p class="feature-subtext">With Live Instructors</p>
+        </div>
+  
+        <div class="feature-box">
+          <div class="feature-icon">
+            <img src="infinity-icon.png" alt="Infinity">
+          </div>
+          <h3 class="feature-title">Real Time Doubt Resolution</h3>
+          <p class="feature-subtext">With Live Instructors</p>
+        </div>
+  
+        <div class="feature-box">
+          <div class="feature-icon">
+            <img src="247-icon.png" alt="24/7">
+          </div>
+          <h3 class="feature-title">Real Time Doubt Resolution</h3>
+          <p class="feature-subtext">With Live Instructors</p>
+        </div>
+  
+        <div class="feature-box">
+          <div class="feature-icon">
+            <img src="growth-icon.png" alt="Growth Chart">
+          </div>
+          <h3 class="feature-title">Real Time Doubt Resolution</h3>
+          <p class="feature-subtext">With Live Instructors</p>
+        </div>
+  
+      </div>
+    </div>
+  </section> 
+
+  <!-- Top Achievers Info Section Starts Here -->
+<section class="top-achievers-section">
+  <div class="top-achievers-content">
+    <h2 class="top-title">Why We are on TOP 1</h2>
+    <p class="top-subtitle">
+      More people train with AcheiversIT because of our commitment to quality, Placement Support, and Real-time Training.
+    </p>
+
+    <div class="stats-container">
+      <div class="stat-box">
+        <h3 class="stat-number">135 +</h3>
+        <p class="stat-text">TRENDING COURSES</p>
+      </div>
+      <div class="stat-box">
+        <h3 class="stat-number">60 +</h3>
+        <p class="stat-text">IT Companies are tied-UP to hire our trained students</p>
+      </div>
+      <div class="stat-box">
+        <h3 class="stat-number">25 +</h3>
+        <p class="stat-text">Students attend Interviews every day through our Placement Cell</p>
+      </div>
+      <div class="stat-box">
+        <h3 class="stat-number">3 +</h3>
+        <p class="stat-text">Of our students Get Jobs every day in Bangalore and India</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Top Achievers Info Section Ends Here -->
+
+<!-- Trainers Company Logos Section Starts Here -->
+<section class="trainers-companies-section">
+  <div class="container">
+    <h2 class="section-title">Our Trainers From</h2>
+
+    <div class="companies-logos-grid">
+      <div class="company-logo"><img src="https://www.achieversit.com/assets/images/php_development_training.png" alt="Cognizant Logo" style="height: 100px;width: 200px;"></div>
+      <div class="company-logo"><img src="https://www.achieversit.com/assets/images/ui_Development_training.png" alt="HCL Logo" style="height: 100px;width: 200px;"></div>
+      <div class="company-logo"><img src="https://www.achieversit.com/assets/images/angualr_development_training.png" alt="Infosys Logo"  style="height: 100px;width: 200px;"></div>
+      <div class="company-logo"><img src="https://www.achieversit.com/assets/images/aws_development_training.png" alt="Accenture Logo"  style="height: 100px;width: 200px;">></div>
+      <div class="company-logo"><img src="https://www.achieversit.com/assets/images/boostrap_development%20.png" alt="Oracle Logo"  style="height: 100px;width: 200px;">></div>
+      <div class="company-logo"><img src="https://www.achieversit.com/assets/images/react_development_training.png" alt="IBM Logo"  style="height: 100px;width: 200px;">></div>
+      <div class="company-logo"><img src="https://www.achieversit.com/assets/images/software_development_training.png" alt="Amazon Logo"  style="height: 100px;width: 200px;">></div>
+      <div class="company-logo"><img src="https://www.achieversit.com/assets/images/software_training_courses.png" alt="Visa Logo"  style="height: 100px;width: 200px;">></div>
+      <div class="company-logo"><img src="https://www.achieversit.com/assets/images/web_development_training.png" alt="Flipkart Logo"  style="height: 100px;width: 200px;">></div>
+      <div class="company-logo"><img src="https://www.achieversit.com/assets/images/angularjs_training.png" alt="Dell Logo"  style="height: 100px;width: 200px;">></div>
+    </div>
+  </div>
+</section>
+<!-- Trainers Company Logos Section Ends Here -->
+
+<!-- AchieversIT Process Section Starts Here -->
+<section class="achievers-process-section">
+  <div class="container">
+    <h2 class="section-title">AchieversIT Process</h2>
+
+    <div class="process-grid">
+
+      <!-- Process Step 1 -->
+      <div class="process-step">
+        <h3 class="step-number">350+</h3>
+        <p class="step-label">Courses</p>
+      </div>
+
+      <!-- Process Step 2 -->
+      <div class="process-step">
+        <h3 class="step-number">100%</h3>
+        <p class="step-label">Placement Assistance</p>
+      </div>
+
+      <!-- Process Step 3 -->
+      <div class="process-step">
+        <h3 class="step-number">15+</h3>
+        <p class="step-label">Years of Experience</p>
+      </div>
+
+      <!-- Process Step 4 -->
+      <div class="process-step">
+        <h3 class="step-number">15000+</h3>
+        <p class="step-label">Students Trained</p>
+      </div>
+
+      <!-- Process Step 5 -->
+      <div class="process-step">
+        <h3 class="step-number">50+</h3>
+        <p class="step-label">Trainers</p>
+      </div>
+
+      <!-- Process Step 6 -->
+      <div class="process-step">
+        <h3 class="step-number">Live</h3>
+        <p class="step-label">Projects & Training</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- AchieversIT Process Section Ends Here -->
+
+<!-- Latest Job Openings Section Start -->
+<section class="job-openings-section">
+  <div class="container">
+    <h2 class="section-title">Latest Job Openings</h2>
+
+    <div class="job-grid">
+
+      <!-- Job Card 1 -->
+      <div class="job-card">
+        <h3 class="job-title">Front End Developer – Angular js, Nodejs</h3>
+        <p class="job-location">Location : Bangalore</p>
+        <div class="job-arrow">&#x2B07;</div>
+      </div>
+
+      <!-- Job Card 2 -->
+      <div class="job-card">
+        <h3 class="job-title">Senior Software Engineer – Java Full Stack Developer</h3>
+        <p class="job-location">Location : Bangalore</p>
+        <div class="job-arrow">&#x2B07;</div>
+      </div>
+
+      <!-- Job Card 3 -->
+      <div class="job-card">
+        <h3 class="job-title">UI Developer – AngularJS Frameworks</h3>
+        <p class="job-location">Location : Bangalore</p>
+        <div class="job-arrow">&#x2B07;</div>
+      </div>
+
+      <!-- Job Card 4 -->
+      <div class="job-card">
+        <h3 class="job-title">Python Developer ( Fresher ) Requirement.</h3>
+        <p class="job-location">Location : Bangalore</p>
+        <div class="job-arrow">&#x2B07;</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Latest Job Openings Section End -->
+
+<!-- Business Section Start -->
+<section class="business-section">
+  <div class="business-content">
     
-    <h1>RECENT ADDITIONS</h1>
-    <section style="display: inline-flex; gap: 20px;">
-        <div>
-            <h6 style="color: aquamarine;"><b>UI DEVELOPMENT COURSE</b></h6>
-        </div>
-
-        <div>
-            <h6 style="color: darkblue;"><b>VUEJS DEVELOPMENT COURSE</b></h6>
-        </div>
-
-        <div>
-            <h6 style="color: skyblue;"><b>WORDPRESS DEVELOPMENT COURSE</b></h6>
-        </div>
-
-        <div>
-            <h6 style="color: red;"><b>PYTHON DEVELOPMENT COURSE</b></h6>
-        </div>
-     </section>
-
+    <p class="business-subheading">
+      <strong>Acheivers IT !</strong> for business
+    </p>
     
+    <h1 class="business-heading">
+      No more dull edges in your company. Make your employees into masters....
+    </h1>
+    
+    <p class="business-description">
+      Nurture talent with instructor-led courses on trending technologies
+    </p>
+    
+    <a href="#" class="business-button">BUSINESS CONTACT</a>
+
+  </div>
+</section>
+<!-- Business Section End -->
+
+<!-- Corporate Clients Section Start -->
+<section class="corporate-clients-section">
+  <h2 class="section-title">Our Corporate Clients</h2>
+  
+  <div class="clients-logos">
+    <img src="https://www.achieversit.com/assets/images/ui_Development_training.png" alt="HCL" class="client-logo" style="height: 50px; width: 100px; gap: 50px;" >
+    <img src="https://www.achieversit.com/assets/images/php_development_training.png" alt="Cognizant" class="client-logo" style="height: 50px; width: 100px; gap: 50px;">
+    <img src="https://www.achieversit.com/assets/images/angualr_development_training.png" alt="Infosys" class="client-logo" style="height: 50px; width: 100px; gap: 50px;">
+    <img src="https://www.achieversit.com/assets/images/aws_development_training.png" alt="Accenture" class="client-logo" style="height: 50px; width: 100px; gap: 50px;">
+    <img src="https://www.achieversit.com/assets/images/boostrap_development%20.png" alt="Oracle" class="client-logo" style="height: 50px; width: 100px; gap: 50px;">
+    <img src="https://www.achieversit.com/assets/images/react_development_training.png" alt="IBM" class="client-logo" style="height: 50px; width: 100px; gap: 50px;">
+
+    <img src="https://www.achieversit.com/assets/images/python_development_traning.png" alt="Wipro" class="client-logo" style="height: 50px; width: 100px; gap: 50px;">
+    <img src="https://www.achieversit.com/assets/images/software_development_training.png" alt="Amazon" class="client-logo" style="height: 50px; width: 100px; gap: 50px;">
+    <img src="https://www.achieversit.com/assets/images/web_development_training.png" alt="Flipkart" class="client-logo" style="height: 50px; width: 100px; gap: 50px;">
+    <img src="https://www.achieversit.com/assets/images/web_development_training.png" alt="Visa" class="client-logo" style="height: 50px; width: 100px; gap: 50px;">
+    <img src="https://www.achieversit.com/assets/images/new-cisco-logo-png-1.png" alt="Cisco" class="client-logo" style="height: 50px; width: 100px; gap: 50px;">
+    <img src="https://www.achieversit.com/assets/images/angularjs_training.png" alt="Dell" class="client-logo" style="height: 50px; width: 100px; gap: 50px;">
+  </div>
+</section>
+<!-- Corporate Clients Section End -->
+
+<!-- Footer Section Start -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Left: Logo & Description -->
+    <div class="footer-about">
+      <img src="images/logo.png" alt="AchieversIT Logo" class="footer-logo">
+      <p class="footer-description">
+        AchieversIT – Provides a wide group of opportunities for freshers and experienced candidates who can develop their skills and build their career opportunities across multiple companies.
+      </p>
+    </div>
+
+    <!-- Company Links -->
+    <div class="footer-column">
+      <h4 class="footer-heading">Company</h4>
+      <ul class="footer-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Placements</a></li>
+        <li><a href="#">Corporate Training</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Trending Courses -->
+    <div class="footer-column">
+      <h4 class="footer-heading">Trending Courses</h4>
+      <ul class="footer-links">
+        <li><a href="#">UI Development Course</a></li>
+        <li><a href="#">Angular JS Course</a></li>
+        <li><a href="#">React JS Course</a></li>
+        <li><a href="#">Digital Marketing Course</a></li>
+        <li><a href="#">Python Course</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-column">
+      <h4 class="footer-heading">Contact Info</h4>
+      <ul class="footer-contact">
+        <li><i class="fas fa-map-marker-alt"></i> #63, 1<sup>st</sup> Floor, 16<sup>th</sup> Main, 8<sup>th</sup> Cross, BTM 1<sup>st</sup> Stage, Bangalore, India - 560029</li>
+        <li><i class="fas fa-phone-alt"></i> India: +91 8431-040-457</li>
+        <li><i class="fas fa-envelope"></i> info@achieversit.com</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <hr class="footer-divider">
+
+  <!-- Social Media & Copyright -->
+  <div class="footer-bottom">
+    <div class="footer-social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <p class="footer-copy">
+      Copyright © 2025 AchieversIT. All Rights Reserved
+    </p>
+
+    <div class="footer-policies">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Refund Policy</a>
+    </div>
+  </div>
+
+  <!-- Floating Bar -->
+  <div class="footer-floating-bar">
+    <div class="call-us">
+      <i class="fas fa-phone-volume"></i> Call us on: +91 8151000080
+    </div>
+    <div class="request-call">
+      <i class="fas fa-envelope-open-text"></i> Request A Call Back
+    </div>
+    <div class="whatsapp-chat">
+      <i class="fab fa-whatsapp"></i> Chat With Us!
+    </div>
+  </div>
+
+  <!-- Contact Us Button on Side -->
+  <div class="side-contact-button">
+    CONTACT US
+  </div>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+</footer>
+<!-- Footer Section End -->
+
 </body>
 </html>
